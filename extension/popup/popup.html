@@ -1,0 +1,15 @@
+<div class="">
+  <h1>Post a Timed Comment</h1>
+  <form action = 'http://localhost:5000/add-timed-comment' method='post'>
+    <div class="live-comment-target"></div>
+    Comment Time: <input name = 'comment_time'>
+    <div class="field-errors comment_time-errors"></div>
+    Comment: <input name = 'content'>
+    <div class="field-errors content-errors"></div>
+
+    <button type="submit" id="submitTimedComment">Submit</button>
+  </form>
+</div>
+
+<script src="/content/lib/jquery_3_3_1.min.js"></script>
+<script src="/popup/popup.js"></script>

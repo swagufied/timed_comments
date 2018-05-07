@@ -1,0 +1,33 @@
+{
+  "name": "live comment extension",
+  "version": "1.0",
+  "description":"this is a live commetn extension",
+  "manifest_version": 2,
+  "permissions": [
+    "tabs",
+    "storage",
+    "webNavigation",
+    "*://*.gogoanime.se/*",
+    "*://*.vidstreaming.io/*"
+  ],
+  "background":{
+    "scripts":[ "content/lib/jquery_3_3_1.min.js","background/background.js"]
+  },
+  "browser_action":{
+    "default_icon": "icon.jpg",
+    "default_script": "popup/popup.js",
+    "default_popup": "popup/popup.html"
+  },
+  "content_scripts":[
+    {
+      "matches": ["<all_urls>"],
+      "css": ["content/lib/videojs.css", "content/my/content.css"],
+      "js": [
+        "content/lib/jquery_3_3_1.min.js",
+        "content/lib/videojs.js",
+        "content/my/renderTimedComments.js",
+        "content/my/timedCommentSetup.js",
+        "content/my/index.js"]
+    }
+  ]
+}
