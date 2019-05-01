@@ -1,7 +1,7 @@
 # timed_comments
 
 ### notes
-# currently only runs locally and on crunchyroll. other sites under experimentation.
+# only runs locally and on crunchyroll. prototype.
 
 ### requirements
 * must install [the crunchyroll html5er](https://chrome.google.com/webstore/detail/crunchyroll-html5/ihegfgnkffeibpmnajnoiemkcmlbmhmi)
