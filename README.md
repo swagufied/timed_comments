@@ -5,7 +5,7 @@
 * The prototype only runs locally and on crunchyroll. It should be more broadly applicable to any video that is played using the html5 video element (Ex. Youtube, Hulu, Netflix, etc.)
 
 ### Requirements
-* Must install [the crunchyroll html5er](https://chrome.google.com/webstore/detail/crunchyroll-html5/ihegfgnkffeibpmnajnoiemkcmlbmhmi).
+* Must install [the crunchyroll html5er](https://chrome.google.com/webstore/detail/crunchyroll-html5/ihegfgnkffeibpmnajnoiemkcmlbmhmi). This is because at the moment, html5 players for crunchyroll are not publicly available.
 * Postgresql, flask, flask-admin, flask-cors, and flask-sqlalchemy, python3
 * Change database location and credentials in server/dev_config.py to match its location on your computer.
 
